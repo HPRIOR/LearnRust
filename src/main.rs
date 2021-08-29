@@ -7,6 +7,7 @@ use crate::control_flow::this_main as control_flow_main;
 use crate::fib::fib;
 use crate::ownership::this_main as ownership_main;
 use crate::slice::this_main as slice_main;
+use crate::structs::this_main as structs_main;
 
 use std::collections::HashMap;
 
@@ -18,6 +19,9 @@ mod fib;
 mod ownership;
 mod slice;
 mod structs;
+mod struct_example;
+mod enums;
+mod options;
 
 fn main() {
     // v_and_m_main();
@@ -26,5 +30,6 @@ fn main() {
     // control_flow_main();
     // print!("{}", fib(100, &mut HashMap::new()));
     // ownership_main();
-    slice_main();
+    // slice_main();
+    structs_main();
 }
