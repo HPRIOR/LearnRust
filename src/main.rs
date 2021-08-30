@@ -8,8 +8,7 @@ use crate::fib::fib;
 use crate::ownership::this_main as ownership_main;
 use crate::slice::this_main as slice_main;
 use crate::structs::this_main as structs_main;
-
-use std::collections::HashMap;
+use crate::vectors::this_main as vectors_main;
 
 mod variables_and_mutability;
 mod data_types;
@@ -22,6 +21,12 @@ mod structs;
 mod struct_example;
 mod enums;
 mod options;
+mod match_control_flow;
+mod module_system;
+mod vectors;
+mod strings;
+mod hash_maps;
+mod panics;
 
 fn main() {
     // v_and_m_main();
@@ -31,5 +36,6 @@ fn main() {
     // print!("{}", fib(100, &mut HashMap::new()));
     // ownership_main();
     // slice_main();
-    structs_main();
+    // structs_main();
+    vectors_main();
 }

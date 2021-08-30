@@ -11,7 +11,7 @@ fn main() {
     let y: Option<i8> = Some(8);
     let result = match y {
         None => x,
-        Some(x) => y + x
+        Some(y) => y + x
     };
     // these cannot be added as they are
 }

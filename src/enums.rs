@@ -26,7 +26,7 @@ fn route(ip_kind: IpAddrKind) {
 
 fn call_route() {
     route(IpAddrKind::V4);
-    route(IpAddrKind::v6);
+    route(IpAddrKind::V6);
 }
 
 // we would need some data to associate with each type. One solution would be to
