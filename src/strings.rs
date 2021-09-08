@@ -13,7 +13,7 @@ When strings are referred to when speaking about rust, it usually means both Str
 
 pub fn this_main() {
     // string initialisation
-    let mut s = String::new(); // we can push strings onto here as it's mutable
+    let  s = String::new(); // we can push strings onto here as it's mutable
 
     let data = "initial contents";
     let s = data.to_string();

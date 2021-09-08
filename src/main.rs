@@ -27,6 +27,10 @@ mod vectors;
 mod strings;
 mod hash_maps;
 mod panics;
+mod recoverable_errors;
+mod generics;
+mod traits;
+mod lifetimes;
 
 fn main() {
     // v_and_m_main();

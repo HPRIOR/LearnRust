@@ -19,7 +19,7 @@ pub fn this_main() {
     let teams = vec![String::from("Blue"), String::from("Green")];
     let initial_scores = vec![10, 50];
 
-    let mut scores: HashMap<_, _> = teams   // type annotation needed because
+    let scores: HashMap<_, _> = teams   // type annotation needed because
         .into_iter()         // you can collect into a number of
         .zip(initial_scores.into_iter())  // types
         .collect();
