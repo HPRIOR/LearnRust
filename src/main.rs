@@ -31,6 +31,9 @@ mod recoverable_errors;
 mod generics;
 mod traits;
 mod lifetimes;
+mod testing;
+mod closures;
+mod iterators;
 
 fn main() {
     // v_and_m_main();
