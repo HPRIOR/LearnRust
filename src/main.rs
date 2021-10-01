@@ -9,6 +9,7 @@ use crate::ownership::this_main as ownership_main;
 use crate::slice::this_main as slice_main;
 use crate::structs::this_main as structs_main;
 use crate::vectors::this_main as vectors_main;
+use crate::iterators::manually_call_iter;
 
 mod variables_and_mutability;
 mod data_types;
@@ -34,6 +35,12 @@ mod lifetimes;
 mod testing;
 mod closures;
 mod iterators;
+mod cargo;
+mod smart_pointers;
+mod r#box;
+mod deref;
+mod drop;
+mod rc_reference_counted;
 
 fn main() {
     // v_and_m_main();
@@ -44,5 +51,6 @@ fn main() {
     // ownership_main();
     // slice_main();
     // structs_main();
-    vectors_main();
+    // vectors_main();
+    manually_call_iter();
 }

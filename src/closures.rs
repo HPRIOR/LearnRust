@@ -122,7 +122,7 @@ Fn
 
 fn move_keyword() {
     let x = vec![1, 2, 3];
-    let equal_to_x = move |z| z == x;
+    let equal_to_x = move |z: Vec<i32>| z == x;
     // println!("cant' use x here {:?}", x); <- compile error
     // x has been moved and is owned by equal_to_x
 }
